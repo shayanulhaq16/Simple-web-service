@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    /* margin-top: 8px; */
+
+}
+
+.logo-text {
+    font-family: 'fira sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4rem;
+    /* margin-bottom: 30px; */
+
+}
+
+header {
+
+    border-bottom: 1px solid rgb(199, 199, 199);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    height: 55px;
+    align-items: center;
+    margin: 0px 28px 0px 28px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.links ul li {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #6e6e6e;
+    font-weight: 600;
+    margin: 12px;
+}
+
+.links ul li:hover {
+    color: #d09608;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+.theme {
+    color: rgb(177, 177, 177);
+}
+
+.search-logo {
+    color: rgb(177, 177, 177);
+    position: relative;
+    left: 30px;
+    /* padding-left: 10px */
+}
+
+.search {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 7px 0px;
+
+}
+
+.search:focus {
+    border: 1px solid #d09608 !important;
+    outline: none;
+}
+
+.search::placeholder {
+    font-size: 15px;
+}
+
+
+.main-logo {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* margin-top: 40px; */
+}
+
+.main-logo-img {
+    width: 280px;
+    height: 280px;
+}
+
+.main-headings {
+    width: 580px;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: 2px auto;
+}
+
+.first-h {
+    font-size: 3rem;
+    font-family: 'fira sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: rgb(53, 53, 53);
+}
+
+.second-h {
+    font-size: 1.6rem;
+    font-family: 'fira sans', sans-serif;
+    color: rgb(60 60 67 / 78%);
+    margin-bottom: 25px;
+}
+
+
+.main-btn {
+    padding: 18px 30px;
+    font-family: sans-serif;
+    font-size: 19px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    font-weight: 00;
+    color: white;
+    background-color: #c9940e;
+    border: none;
+}
+
+.main-btn:hover {
+
+    background-color: #ac7e0b;
+}
+
+.line {
+    width: 940px;
+    text-align: center;
+    height: 1px;
+
+    background-color: rgb(211, 210, 210);
+    margin: 0 auto;
+}
+
+.main-2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.bene {
+    width: 300px;
+}
+
+
+
+.b-heading {
+    color: #2a2a2e;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-bottom: 19px;
+    letter-spacing: 0.3px;
+}
+
+
+.b-para {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(134, 134, 134);
+    word-spacing: 2px;
+    line-height: 25px;
+
+}
+
+.coming-link a {
+    /* text-decoration: none; */
+    color: #dba016;
+}
+
+.coming-link {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 55px 10px 20px 10px;
+    text-align: center;
+}
+
+
+.main-screenshot {
+    text-align: center;
+
+}
+
+
+
+.main-screenshot img {
+    width: 70%;
+    height: 700px;
+}
+
+footer {
+    margin: 70px 20px 70px 20px;
+    text-align: center;
+}
+
+
+.para-1,
+.para-2 {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #6e6e6e;
+}
+
+footer a {
+    font-size: 16;
+    color: #c9940e;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-headings,
+    .line,
+    .main-screenshot img {
+        width: 100%;
+    }
+
+    .logo-text {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .main-screenshot img {
+        height: 400px;
+    }
+
+    .links ul {
+        display: none;
+    }
+
+    .main-2{
+        flex-wrap: wrap;    
+    }
+}
