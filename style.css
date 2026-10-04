@@ -63,6 +63,7 @@ nav {
     color: #6e6e6e;
     font-weight: 600;
     margin: 12px;
+    transition: all 0.5s;
 }
 
 .links ul li:hover {
@@ -74,29 +75,60 @@ nav {
 
 .theme {
     color: rgb(177, 177, 177);
+    font-size: 17px;
+}
+
+#setting-btn{
+    background-color: none;
+    border: none;
+}
+
+.search-div{
+    width: 165px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 20px;
 }
 
 .search-logo {
     color: rgb(177, 177, 177);
     position: relative;
-    left: 30px;
-    /* padding-left: 10px */
+    margin-left: 10px;
+    /* left: 33px; */
 }
 
 .search {
-    border: 1px solid rgb(190, 190, 190);
-    border-radius: 20px;
-    padding: 7px 0px;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    /* border-radius: 20px; */
+    padding: 7px 4px;
+    /* margin-left: 10px; */
 
 }
 
-.search:focus {
+.search:focus{
+    border: none;
+    outline: none;
+
+}
+
+.search-div:focus-within {
     border: 1px solid #d09608 !important;
     outline: none;
 }
 
 .search::placeholder {
     font-size: 15px;
+}
+
+main{
+    margin-top: 65px;
+
 }
 
 
@@ -107,7 +139,6 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    /* margin-top: 40px; */
 }
 
 .main-logo-img {
